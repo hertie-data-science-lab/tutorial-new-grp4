@@ -11,24 +11,47 @@
 
 = xAI in Public Policy
 
-== Motivation
+== Motivation // Luis
 
-== Case Study
+#lorem(20)
+
+== Case 1
+
+#lorem(20)
+
+== Case 2
 
 #lorem(20)
 
 = Methods
 
-== SHAP
+== Landscape // Luis
 
 #lorem(20)
 
-== LIME
+== Our Case // Franco
+
+// Present Case (Franco)
 
 #lorem(20)
 
-== Counterfactual Explanations
+== LIME // Franco
 
 #lorem(20)
+
+== Counterfactual Explanations // Franco
+
+#lorem(20)
+
+== SHAP // Franco
+
+#lorem(20)
+
+= Takeaways // Luis
+
+- At core: Human interpretability
+- Inherently interpretable first
+- Ethical use of black box models
+- Explanability methods useful but limited
 
 = Q&A
