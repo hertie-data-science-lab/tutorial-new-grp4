@@ -61,10 +61,10 @@ Why xAI?
 #align(center, box(
   clip: true,
   radius: 12pt,
-  image("assets/casejuan.jpg", width: 50%)
+  image("assets/casejuan.jpg", width: 50%),
 ))
 
-*Meet Juan, a 35-year-old immigrant living in Germany.* 
+*Meet Juan, a 35-year-old immigrant living in Germany.*
 
 He runs a small bookstore in Pankow, Berlin. Recently, flooding from an adjacent building damaged his shop, so urgently applied for a loan to repair the property.
 
@@ -75,12 +75,12 @@ On paper, Juan looks like a strong applicant, but his loan gets denied. Can XAI 
 #align(center, text(1.3em, weight: "semibold")[*“Why was Juan classified as high risk and therefore declined?”*])
 
 *What is LIME?*
--	Local Interpretable Model-Agnostic Explanations)
--	Provides selective, local explanations for individuals predictions
+- Local Interpretable Model-Agnostic Explanations)
+- Provides selective, local explanations for individuals predictions
 
 *Why is it relevant?*
--	Shows why a single feature drove a specific decision
--	Good to zoom in on an individual case and the model's beahvior around that feature
+- Shows why a single feature drove a specific decision
+- Good to zoom in on an individual case and the model's beahvior around that feature
 
 
 == DiCE // Franco
@@ -88,24 +88,24 @@ On paper, Juan looks like a strong applicant, but his loan gets denied. Can XAI 
 #align(center, text(1.3em, weight: "semibold")[*“What changes in Juan’s feature profile would flip the decision?”*])
 
 *What is DiCE?*
--	Diverse Counterfactual Explanations
--	_“What if”_ scenario analysis into the features the model treats as most actionable
+- Diverse Counterfactual Explanations
+- _“What if”_ scenario analysis into the features the model treats as most actionable
 
 *Why is it relevant?*
--	Counterfactuals map the applicant's profile and make choices more transparent
--	Provide a way forward if we were to make model adjustments
+- Counterfactuals map the applicant's profile and make choices more transparent
+- Provide a way forward if we were to make model adjustments
 
 == SHAP
 
 #align(center, text(1.3em, weight: "semibold")[*“Which features matter the most overall, across all combinations?”*])
 
 *What is SHAP?*
--	SHapley Additive exPlanations 
--	If features were players in a _game_, how much would each contribute most to the overall payout, or prediction?
+- SHapley Additive exPlanations
+- If features were players in a _game_, how much would each contribute most to the overall payout, or prediction?
 
 *Why is it relevant?*
--	Provides global, game theory explanations of feature importance
--	Detects feature interactions and nonlinearities relevant for deep learning
+- Provides global, game theory explanations of feature importance
+- Detects feature interactions and nonlinearities relevant for deep learning
 
 = Takeaways // Luis
 
@@ -125,3 +125,6 @@ On paper, Juan looks like a strong applicant, but his loan gets denied. Can XAI 
 - Image source: https://transferlab.ai/trainings/explainable-ai/
 - Bookstore image: provided
 - Propublica article: https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing
+
+== Backup
+
