@@ -49,9 +49,14 @@ Why xAI?
 
 = Methods
 
-== Landscape // Luis
+== Taxonomy // Luis
 
-#lorem(20)
+#align(center, image("./assets/xai_taxonomy.png", width: 70%))
+
+#align(center, text(
+  "Source: https://transferlab.ai/trainings/explainable-ai/",
+  size: 0.5em,
+))
 
 == Our Case // Franco
 
