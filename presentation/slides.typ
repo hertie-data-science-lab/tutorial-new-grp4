@@ -26,13 +26,26 @@ Why xAI?
 
 - Tradeoff: Performace vs Interpretability?
 
-== Case 1
+== Case 1: COMPAS recidivism tool
 
-#lorem(20)
+- Tool used in US courts to predict likelihood of reoffending
+- Controversy: Alleged racial bias in predictions
+  - A #link("https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing")[ProPublica investigation] revealed that Black defendants were more likely to be incorrectly labeled as high risk
 
-== Case 2
+- Model was proprietary and opaque
+- Highlighted need for transparency and accountability in AI systems used in critical decision-making
 
-#lorem(20)
+
+== Case 2: Credit Scoring
+
+- Credit scoring agencies use statistical models to evaluate creditworthiness
+- Controversy: Lack of transparency in how scores are calculated
+  - Consumers often unaware which factors influencing their scores
+  - Individuals might be affected in their ability to obtain loans, housing, or employment
+
+- Regulatory bodies emphasize the need for explainability to ensure fairness and prevent discrimination
+- Example: EU's General Data Protection Regulation (GDPR) includes a "right to explanation" for individuals affected by automated decision-making"
+- But: Enforcement and practical implementation remain challenging
 
 = Methods
 
