@@ -14,9 +14,14 @@ Quick build / preview (Mac terminal)
 - Open the generated PDF with Preview:
   `open presentation/slides.pdf`
 
+Preview in VSCode
+- `Cmd + Shift + P`/`Ctrl + Shift + P`
+- Choose *Typst Preview: Preview Opened File*
+
 Key files
 - presentation/slides.typ — deck source (imports template and sets metadata)
 - presentation/ (any local assets like images or custom styles)
+- assets contains any images and embedded files
 
 How the slides are structured
 - Top-level slide: `= Title`
