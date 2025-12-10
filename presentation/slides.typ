@@ -4,9 +4,10 @@
   title: "Introduction to Explainable AI",
   subtitle: "Deep Learning Tutorial",
   date: "2025-12-11",
-  authors: "Names...",
+  authors: "Padma, Ben, Franco, Luis (Group 4)",
   title-color: rgb("#BA0020").darken(10%),
   count: "number",
+  layout: "large",
 )
 
 = xAI in Public Policy
@@ -72,15 +73,24 @@ Why xAI?
 
 #lorem(20)
 
-== SHAP // Franco
+== SHAP
 
 #lorem(20)
 
 = Takeaways // Luis
 
-- At core: Human interpretability
-- Inherently interpretable first
-- Ethical use of black box models
-- Explanability methods useful but limited
+== Takeaways
+
+- At core: Human interpretability & oversight
+
+- One should prioritize inherently interpretable models first
+- If performance is critical, use of black box models should be accompanied by rigorous evaluation of explainability techniques
+- Explainability methods can be useful but are limited; one needs to be cautious about their interpretations
 
 = Q&A
+
+== Acknowledgements
+
+- typst template by #link("https://typst.app/universe/package/diatypst/")[diatypst]
+- Image source: https://transferlab.ai/trainings/explainable-ai/
+- Propublica article: https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing
