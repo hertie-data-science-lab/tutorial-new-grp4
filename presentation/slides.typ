@@ -13,7 +13,18 @@
 
 == Motivation // Luis
 
-#lorem(20)
+Why xAI?
+
+- Transparency is essential for ethical AI deployment
+- Need to understand, trust and govern AI systems, especially when deployed in government-contexts
+- Real cases
+  - COMPAS recidivism tool
+  - Medical triage algorithms
+  - Automated eligibility systems
+
+- Regulation is catching up: OECD guidelines and the EU AI Act demand clear explanations, bias checks and human oversight for high-risk systems
+
+- Tradeoff: Performace vs Interpretability?
 
 == Case 1
 
