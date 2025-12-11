@@ -21,11 +21,11 @@ The core of this idea lies in _human interpretability_:
 - *"Interpretability is the degree to which a human can understand the cause of a decision" (Biran & Cotton, 2017)*
 
 We need to  interpret the _methods_ and _predictions_ behind AI models (Molnar, 2025), in order to trust and govern AI systems, especially when deployed in society, such as...
-  - COMPAS recidivism tool
-  - Medical triage algorithms
-  - Automated eligibility systems
+- COMPAS recidivism tool
+- Medical triage algorithms
+- Automated eligibility systems
 
-*Regulation is catching up:* 
+*Regulation is catching up:*
 
 - OECD guidelines and the EU AI Act demand clear explanations, bias checks and human oversight for high-risk systems
 - Tradeoff: Performance vs Interpretability?
@@ -40,9 +40,10 @@ We need to  interpret the _methods_ and _predictions_ behind AI models (Molnar, 
 - Model was proprietary and opaque
 - Highlighted need for transparent and accountable AI-based decision making systems
 
-#align(center, 
-figure(image("./assets/table1_compass.png", width: 70%), caption: text(1.0em, fill: black)[Example of Risk Prediction and Recidivism in Florida, source: ProPublica])
-)
+#align(center, figure(image("./assets/table1_compass.png", width: 70%), caption: text(
+  1.0em,
+  fill: black,
+)[Example of Risk Prediction and Recidivism in Florida, source: ProPublica]))
 == Case 2: Credit Scoring
 
 - Credit scoring agencies use statistical models to evaluate creditworthiness
@@ -86,85 +87,85 @@ On paper, Juan looks like a strong applicant, but his loan gets denied. Can XAI 
 // Top box: FFNN
 
 #align(center)[
-#box(inset: 7pt,
-  stroke: 1pt + black,
-  text(0.8em)[
+  #box(inset: 7pt, stroke: 1pt + black, text(0.8em)[
     *Base Model: FFNN* \
     (Black Box Classifier)
-  ]
-)
-#v(0.1em)
-↓
-#v(0.1em)
-// Middle box: Creditability
-#box(
-  inset: 7pt,
-  stroke: 1pt + black,
-  text(0.8em)[
-    *Trained FFNN: Prediction* \
-    (Creditworthiness = good/bad)
-  ]
-)
-#v(0.1em)
-↓
-#v(0.1em)
-// Middle box: Test cases
-#box(
-  inset: 7pt,
-  stroke: 1pt + black,
-  text(0.8em)[
-    *Introduction of Test Cases* \
-    (Is the FFNN fair to Juan?)
-  ]
-)
-#v(0.1em)
-↓
-// Bottom
-#table(
-  columns: 3,
-  align: center,
-  [
-    #box(
-      inset: 9pt,
-      stroke: 0.5pt + red,
-      radius: 8pt,
-      text(0.8em)[
-        *LIME* \
-        "Why this prediction?" \
-        Local explanation
-      ]
-    )
-  ],
-  [
-    #box(
-      inset: 9pt,
-      stroke: 0.5pt + red,
-      radius: 8pt,
-      text(0.8em)[
-        *DiCE* \
-        "What if scenarios?" \
-        Counterfactual explanations
-      ]
-    )
-  ],
-  [
-    #box(
-      inset: 9pt,
-      stroke: 0.5pt + red,
-      radius: 8pt,
-      text(0.8em)[
-        *SHAP* \
-        "What matters most?" \
-        Feature contributions
-      ]
-    )
-  ],
-)
+  ])
+  #v(0.1em)
+  ↓
+  #v(0.1em)
+  // Middle box: Creditability
+  #box(
+    inset: 7pt,
+    stroke: 1pt + black,
+    text(0.8em)[
+      *Trained FFNN: Prediction* \
+      (Creditworthiness = good/bad)
+    ],
+  )
+  #v(0.1em)
+  ↓
+  #v(0.1em)
+  // Middle box: Test cases
+  #box(
+    inset: 7pt,
+    stroke: 1pt + black,
+    text(0.8em)[
+      *Introduction of Test Cases* \
+      (Is the FFNN fair to Juan?)
+    ],
+  )
+  #v(0.1em)
+  ↓
+  // Bottom
+  #table(
+    columns: 3,
+    align: center,
+    [
+      #box(
+        inset: 9pt,
+        stroke: 0.5pt + red,
+        radius: 8pt,
+        text(0.8em)[
+          *LIME* \
+          "Why this prediction?" \
+          Local explanation
+        ],
+      )
+    ],
+    [
+      #box(
+        inset: 9pt,
+        stroke: 0.5pt + red,
+        radius: 8pt,
+        text(0.8em)[
+          *DiCE* \
+          "What if scenarios?" \
+          Counterfactual explanations
+        ],
+      )
+    ],
+    [
+      #box(
+        inset: 9pt,
+        stroke: 0.5pt + red,
+        radius: 8pt,
+        text(0.8em)[
+          *SHAP* \
+          "What matters most?" \
+          Feature contributions
+        ],
+      )
+    ],
+  )
 ]
 
 == LIME // Franco
 
-#align(center, text(1.3em, weight: "semibold")[*“Why was Juan classified as high risk and therefore declined as a credit applicant?”*])
+#align(center, text(
+  1.3em,
+  weight: "semibold",
+)[*“Why was Juan classified as high risk and therefore declined as a credit applicant?”*])
 
 *What is LIME?*
 - Local Interpretable Model-Agnostic Explanations
@@ -209,35 +210,38 @@ On paper, Juan looks like a strong applicant, but his loan gets denied. Can XAI 
 - One should *prioritize inherently interpretable models whenever possible*
 - If performance is critical, *use of black box models should be paired with rigorous evaluation of explainability methods* throughout their application
 - Explainability methods are helpful but are limited
-  - *One method is not enough* (see local/ global) 
+  - *One method is not enough* (see local/ global)
   - *Interpretations require caution* ("importance" of what, and in what sense?)
-  - We can try to capture uncertainty... but data and efficiency constraints remain  
+  - We can try to capture uncertainty... but data and efficiency constraints remain
 
 = Q&A
 
 == Acknowledgements
 _References_
-- Angwin, J., Larson, J., Mattu, S., & Kirchner, L. (2016). Machine bias: There’s software used across the country to predict future criminals. And it’s biased against Blacks. ProPublica. https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing  
-- Molnar, C. (2025). Interpretable machine learning: A guide for making black box models explainable (3rd ed.). https://christophm.github.io/interpretable-ml-book/  
-- TransferLab. (n.d.). Explainable AI training materials. https://transferlab.ai/trainings/explainable-ai/  
+- Angwin, J., Larson, J., Mattu, S., & Kirchner, L. (2016). Machine bias: There’s software used across the country to predict future criminals. And it’s biased against Blacks. ProPublica. https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing
+- Molnar, C. (2025). Interpretable machine learning: A guide for making black box models explainable (3rd ed.). https://christophm.github.io/interpretable-ml-book/
 
 _Template & Images_
 - typst template by #link("https://typst.app/universe/package/diatypst/")[diatypst]
 - Bookstore image: provided
 - Blackbox image: Molnar, 2025
+- Taxonomy figure: https://transferlab.ai/trainings/explainable-ai/
 
-== Annex I: LIME 
-#align(center, 
-figure(image("./assets/examplelime.png", width: 100%), caption: text(1.0em, fill: black)[Local Explanations of FFNN Predictions: The Cases of Juan and Maximilian])
-)
+== Annex I: LIME
+#align(center, figure(image("./assets/examplelime.png", width: 100%), caption: text(
+  1.0em,
+  fill: black,
+)[Local Explanations of FFNN Predictions: The Cases of Juan and Maximilian]))
 
 
-== Annex II: DiCE 
-#align(center, 
-figure(image("./assets/exampledice.png", width: 100%), caption: text(1.0em, fill: black)[Counterfactual Analysis based on Scenarios 1-3 of Potential Feature Changes])
-)
+== Annex II: DiCE
+#align(center, figure(image("./assets/exampledice.png", width: 100%), caption: text(
+  1.0em,
+  fill: black,
+)[Counterfactual Analysis based on Scenarios 1-3 of Potential Feature Changes]))
 
-== Annex III: SHAP 
-#align(center, 
-figure(image("./assets/exampleshap.png", width: 50%), caption: text(1.0em, fill: black)[Global  Feature Importance Based on SHAP])
-)
+== Annex III: SHAP
+#align(center, figure(image("./assets/exampleshap.png", width: 50%), caption: text(
+  1.0em,
+  fill: black,
+)[Global  Feature Importance Based on SHAP]))
