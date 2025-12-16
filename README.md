@@ -1,37 +1,22 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/15CTOpCR)
-# Deep Learning E1394 - Tutorial
+# Introduction to Explanability Methods for Machine- & Deep Learning <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Hertie_School_of_Governance_logo.svg/1200px-Hertie_School_of_Governance_logo.svg.png" width="200px" align="right" />
 
-## Submitting your work
+**GRAD-E1394 Deep Learning - Assignment 3**
 
-Once the deadline has passed, you are not able to push to your repository anymore or update it in any other way and all changes on the main branch will be considered for grading. In other words, there is no "submit" button which you need to press. You just need to ensure that all your work has been pushed / uploaded to GitHub before the deadline.
+This tutorial introduces three popular post-hoc, model-agnostic explanability methods for "black-box" machine-learning models: LIME, SHAP, and Diverse Counterfactual Explanations (DiCE), as well as their implementation in Python.
 
-Uploading a new or edited file to GitHub involves three steps:
-1. Add the file to the staging area:
-    ```
-    git add <file to be added>
-    ```
-2. Create a commit:
-    ```
-    git commit -m <commit msg - briefly describe your change>
-    ```
-3. Push the local commit to GitHub:
-    ```
-    git push
-    ```
+We first train a basic Feed-Forward-Neural-Network classifier on the [German Credit Data set](https://archive.ics.uci.edu/dataset/144/statlog+german+credit+data). By introducing synthetic test cases, based on real life scenarios, we show that the model discriminates one person over the other, although intuitively one would expect a different outcome. We then apply LIME, DiCE and SHAP and interpret each method's outcomes in the light of our toy example.
 
-To avoid conflicts when multiple people are working on the same file, we recommend to push your changes as frequently as possible and always pull the latest changes from GitHub before you start working. Also, as a nice teammate, test your changes before you push them and use meaninful commit messages to make it easy to understand your changes.
+In addition to this extensive and technical tutorial, we provide readers with presentation slides, taking a more conceptual angle on the topic.
 
-## Asking for help
+* [Presentation Slides](https://github.com/hertie-data-science-lab/assignment-3---tutorial-adversarial-attacks/blob/30f00c61dc86d4c4a30bd54f81b741ba35ec840d/Presentation/Adversarial%20Machine%20Learning_Presentation_Deep%20Learning.pdf)
+* [Open Tutorial in Google Colab](https://colab.research.google.com/github/hertie-data-science-lab/assignment-3---tutorial-adversarial-attacks/blob/main/tutorial_adversarial_attacks.ipynb)
 
-If you have important questions or believe to have spotted an error, please open an issue on your repository and mention the teaching assistant with @chiara-fb and @henrycgbaker.
+**Authors:**
 
-## Useful Links
-* Git best practices: https://gist.github.com/luismts/495d982e8c5b1a0ced4a57cf3d93cf60
-* How to write a good git commit message: https://cbea.ms/git-commit/
-* Book "Dive into Deep Learning": https://d2l.ai/
-* Tutorial on pushing and submitting work with GitHub classroom: https://www.youtube.com/watch?v=jXpT8eOzzCM
-* Neural network from scratch:
-    * https://towardsdatascience.com/math-neural-network-from-scratch-in-python-d6da9f29ce65
-    * https://pythonalgos.com/create-a-neural-network-from-scratch-in-python-3/
-    * https://github.com/casperbh96/Neural-Network-From-Scratch/blob/master/NN_From_Scratch.ipynb
-    * https://www.codingame.com/playgrounds/59631/neural-network-xor-example-from-scratch-no-libs
+* Benjamin Adoba Ayida ([Github](https://github.com/benjaminayida))
+* Padmavathi Narayana Reddy, ([Github](https://github.com/padmabareddy))
+* Luis Windpassinger ([Github](https://github.com/lwndp))
+* Franco Bastida ([Github](https://github.com/francobastida))
+
+<a href="https://colab.research.google.com/github/hertie-data-science-lab/tutorial-new-grp4/blob/main/DEEPL_Tutorial_xAI.ipynb" target="_parent">
+<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" width="200px"/></a>
