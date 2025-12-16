@@ -1,4 +1,4 @@
-# Introduction to Explanability Methods for Machine- & Deep Learning <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Hertie_School_of_Governance_logo.svg/1200px-Hertie_School_of_Governance_logo.svg.png" width="200px" align="right" />
+# Introduction to Explanability Methods for Machine- & Deep Learning
 
 **GRAD-E1394 Deep Learning - Assignment 3**
 
@@ -20,3 +20,5 @@ In addition to this extensive and technical tutorial, we provide readers with pr
 
 <a href="https://colab.research.google.com/github/hertie-data-science-lab/tutorial-new-grp4/blob/main/DEEPL_Tutorial_xAI.ipynb" target="_parent">
 <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" width="200px"/></a>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Hertie_School_of_Governance_logo.svg/1200px-Hertie_School_of_Governance_logo.svg.png" width="200px" align="right" />
